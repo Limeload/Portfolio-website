@@ -1,38 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Josefin+Sans:wght@300&family=Nunito:wght@200;700&display=swap');
 .App {
   text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  width: 10rem;
+  margin-left: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mr-auto{
+  margin-right: 5rem;
+  font-weight: 800;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hello, .welcome-message, .name{
+  font-weight: 900;
+}
+
+.welcome-message {
+  font-size: large ;
+  color: #595D81;
+  margin: 2rem;
+}
+
+.name{
+  color: #033374;
+}
+
+.projects-section{
+  color: #595D81;
+  font-weight: 900;
+}
+
+.category{
+  color: black;
+  font-weight: 600;
+}
+
+.medium-title{
+  background-color: #033374;
   color: white;
+  font-size: 56px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+  margin-top: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-icon{
+  float: left;
+  border-radius: 50%;
+  margin-right: 20px;}
+
+.category-title{
+  text-align: left;
+  font-weight: 800;
+}
+
+.category-description{
+  font-weight: 400;
+  text-align: left;
 }

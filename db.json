@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": " Individual",
+      "img_url": "./images/icon3.png"
+    },
+    {
+      "id": 2,
+      "name": "Collaboration",
+      "img_url": "./images/icon3.png"
+    },
+    {
+      "id": 3,
+      "name": "Product clones",
+      "img_url": "./images/icon6.png"
+    },
+    {
+      "id": 4,
+      "name": "Verticle",
+      "img_url": "./images/icon1.png"
+    },
+    {
+      "id": 5,
+      "name": "JavaScript",
+      "img_url": "./images/icon2.png"
+    },
+    {
+      "id": 6,
+      "name": "Case Studies",
+      "img_url": "./images/icon5.png"
+    }
+  ]
+}

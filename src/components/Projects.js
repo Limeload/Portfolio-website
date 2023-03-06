@@ -1,47 +1,25 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
-function Projects() {
+
+function Projects({projects}) {
   return (
     <Container className="my-5">
-      <h1>Projects</h1>
+      <h2 className='projects-section'>What I Have In Here?</h2>
+      <p className=' category'> Select a category to check out my work pieces</p>
       <Row className="mt-5">
+        {projects.map((project) => (
         <Col lg={4} md={6} sm={12} className="mb-4">
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/350x200" />
+            <img className="img-icon" src={project.img_url} alt={project.name}/>
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>
+              <Card.Title className="category-title">{project.name}</Card.Title>
+              <Card.Text className="category-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum elit vel lorem scelerisque, ut tincidunt justo aliquet.
               </Card.Text>
-              <Button variant="primary">View Project</Button>
             </Card.Body>
           </Card>
-        </Col>
-        <Col lg={4} md={6} sm={12} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/350x200" />
-            <Card.Body>
-              <Card.Title>Project 2</Card.Title>
-              <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum elit vel lorem scelerisque, ut tincidunt justo aliquet.
-              </Card.Text>
-              <Button variant="primary">View Project</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col lg={4} md={6} sm={12} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/350x200" />
-            <Card.Body>
-              <Card.Title>Project 3</Card.Title>
-              <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum elit vel lorem scelerisque, ut tincidunt justo aliquet.
-              </Card.Text>
-              <Button variant="primary">View Project</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+        </Col>))}
       </Row>
     </Container>
   );
