@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../images/logo.png'
+import linkedin from '../linkedin.png';
+import instagram from '../instagram.png';
+import github from '../github.png';
 
 function Footer(){
   return (
@@ -8,18 +10,15 @@ function Footer(){
       <Container>
         <Row>
           <Col md="6">
-          <img className='logo' src={logo} alt={logo}/>
-          </Col>
-          <Col md="6">
             <div className="social-icons">
-           {/* <a href="#"><i className="fab fa-facebook"></i>LinkedIn</a>
-           <a href="#"><i className="fab fa-twitter"></i>GitHub</a>
-           <a href="#"><i className="fab fa-instagram"></i>Instagram</a> */}
+           <a href="https://www.linkedin.com/in/shraddharaom"><img src={linkedin} alt={linkedin} /></a>
+           <a href="https://www.instagram.com/freedinfinery"><img src={instagram} alt={instagram} /></a>
+           <a href="https://github.com/Limeload"><img src={github} alt={github} /></a>
            </div>
           </Col>
         </Row>
         <hr />
-        <p className="text-center">&copy; 2023 by Shraddha. All Rights Reserved.</p>
+        <p className="text-center">&copy; 2023 by Shraddha Rao. All Rights Reserved.</p>
       </Container>
     </footer>
   );

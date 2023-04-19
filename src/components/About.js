@@ -1,11 +1,26 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import profilePic from '../profilePic.jpeg';
 
 function About() {
   return (
-    <Container className="my-5">
-      <h1>About Me</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et elit sed lorem scelerisque ultrices. Sed sed neque felis. Aliquam erat volutpat. Fusce vel dui sed tortor laoreet tristique. Duis consequat lacinia tortor vitae bibendum. Praesent fermentum, lectus eu interdum mattis, velit risus bibendum sapien, non dictum mauris ex in mi. Nulla facilisi. Proin tristique massa et risus malesuada, ac laoreet quam sodales.</p>
+    <Container>
+      <Row>
+        <Col md={4}>
+          <Image src={profilePic} alt={profilePic} roundedCircle fluid />
+        </Col>
+        <Col md={8} className="about">
+          <p>
+            Hi there! My name is Shraddha Rao and I'm a Software Engineer based in Chicago. I specialize in [Your Area of Expertise] and have [Number of Years of Experience] of experience in the field.
+          </p>
+          <p>
+            I graduated from [Your University] with a degree in [Your Field of Study] and have since worked with a variety of clients and companies in both the [Your Industry] and [Related Industry].
+          </p>
+          <p>
+            In my free time, I enjoy [Your Hobbies or Interests] and [Another Hobby or Interest].
+          </p>
+        </Col>
+      </Row>
     </Container>
   );
 }
