@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import Footer from './Footer';
 
 function Contact() {
   return (
@@ -26,10 +27,11 @@ function Contact() {
           <Form.Control as="textarea" rows={5} placeholder="Enter your message" />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="dark" type="submit">
           Submit
         </Button>
       </Form>
+      <Footer />
     </Container>
   );
 }

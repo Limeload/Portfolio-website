@@ -24,8 +24,8 @@ function Home() {
       <div>
         <Projects projects={projects} />
         <MediumFeed username="shraddharao_" />
-        <Footer />
       </div>
+      <Footer />
     </Container>
   );
 }

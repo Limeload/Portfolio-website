@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import linkedin from '../linkedin.png';
-import instagram from '../instagram.png';
-import github from '../github.png';
+import linkedin from '../images/linkedin.png';
+import instagram from '../images/instagram.png';
+import github from '../images/github.png';
 
 function Footer(){
   return (
     <footer className='footer'>
       <Container>
         <Row>
-          <Col md="6">
+          <Col md="12">
             <div className="social-icons">
            <a href="https://www.linkedin.com/in/shraddharaom"><img src={linkedin} alt={linkedin} /></a>
            <a href="https://www.instagram.com/freedinfinery"><img src={instagram} alt={instagram} /></a>

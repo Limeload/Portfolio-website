@@ -1,14 +1,17 @@
 import React from 'react';
 import Home from './Home';
 import About from './About';
-// import Projects from './Projects';
 import Contact from './Contact';
-// import Footer from './Footer';
-// import MediumFeed from './MediumFeed';
 import NavbarComponent from './NavbarComponent';
 import "../App.css";
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Individual from './Individual';
+import Collaboration from './Collaboration';
+import ProductClones from './ProductClones';
+import Vertical from './Vertical';
+import JavaScript from './JavaScript';
+import CaseStudies from './CaseStudies';
 
 function App() {
   return (
@@ -20,9 +23,13 @@ function App() {
         <Route exact path="/"><Home /></Route>
         <Route path="/about"><About /></Route>
         <Route path="/contact"><Contact /></Route>
-        {/* <Route path="/projects"><Projects projects={projects} /></Route> */}
-        {/* <Route path="/blog"><MediumFeed username="shraddharao_" /></Route> */}
-        {/* <Route path="/footer"><Footer /></Route> */}
+        <Route path="/projects/1"><Individual /></Route>
+        <Route path="/projects/2"><Collaboration /></Route>
+        <Route path="/projects/3"><ProductClones /></Route>
+        <Route path="/projects/4"><Vertical /></Route>
+        <Route path="/projects/5"><JavaScript /></Route>
+        <Route path="/projects/6"><CaseStudies /></Route>
+
         </Container>
       </Switch>
     </div>

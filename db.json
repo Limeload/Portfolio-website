@@ -3,32 +3,38 @@
     {
       "id": 1,
       "name": " Individual",
-      "img_url": "./images/icon3.png"
+      "img_url": "./images/icon3.png",
+      "description": "Projects that I have completed on my own, showcasing my personal interests, skills, and creativity."
     },
     {
       "id": 2,
       "name": "Collaboration",
-      "img_url": "./images/icon4.png"
+      "img_url": "./images/icon4.png",
+      "description": "Showcases my ability to work effectively with others and highlights the strengths and contributions of each team member."
     },
     {
       "id": 3,
       "name": "Product clones",
-      "img_url": "./images/icon6.png"
+      "img_url": "./images/icon6.png",
+      "description": "Reverse-engineered projects showcasing ability to replicate and improve upon existing products or services while adding unique touches and improvements."
     },
     {
       "id": 4,
       "name": "Verticle",
-      "img_url": "./images/icon1.png"
+      "img_url": "./images/icon1.png",
+      "description": "Tailored projects addressing specific needs & challenges of a particular industry/niche, including industry-specific features, marketing materials, & consulting services."
     },
     {
       "id": 5,
       "name": "JavaScript",
-      "img_url": "./images/icon2.png"
+      "img_url": "./images/icon2.png",
+      "description": "Projects demonstrating proficiency in the popular programming language, including interactive features, dynamic content, & enhanced user experience."
     },
     {
       "id": 6,
       "name": "Case Studies",
-      "img_url": "./images/icon5.png"
+      "img_url": "./images/icon5.png",
+      "description": "Real-world examples showcasing problem-solving skills for clients or personal projects, providing detailed insights into thought process & approach to problem-solving."
     }
   ]
 }
