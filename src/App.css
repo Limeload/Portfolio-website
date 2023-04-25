@@ -120,3 +120,8 @@ border: #1d1e20 2px solid;
   width: 20rem;
   border: #1d1e20 2px solid;
 }
+
+.contact-form {
+  padding: 6rem 6rem;
+  margin: 0;
+}

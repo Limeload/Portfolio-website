@@ -1,10 +1,53 @@
 import React from 'react';
+import {useState, useEffect} from 'react';
+import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
+import github from '../images/github.png';
+import demo from '../images/demo.png';
+import tech from '../images/tech.png';
+import Footer from './Footer';
 
 function Collaboration() {
+    const [collab, setCollab] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:3001/collaboration')
+        .then(response => response.json())
+        .then(data => setCollab(data))
+    }, []);
     return (
         <div>
-{/* <h1> Collaboration: This category highlights projects that you have completed in collaboration with one or more individuals. Collaboration is an important aspect of many industries, including design, development, and marketing. By showcasing your collaboration projects on your portfolio website, you can demonstrate your ability to work effectively with others and showcase the strengths and contributions of each team member.</h1> */}
-        </div>
+        <Container className="my-5">
+            {collab?.map((item) => (
+                      <><br /><br />
+                      <h2 className='projects-section'>{item.name}</h2>
+                      <p className=' category'>{item.description}</p>
+                      <Row className="mt-5">
+                    <Col md={8}>
+                        <Image className="project-image" src={item.images} alt={item.images} fluid />
+                    </Col>
+                    <Col md={4}>
+                        <ListGroup className="technologies">
+                            <ListGroup.Item className="d-flex align-items-center">
+                            <img className="img-icon" src={github} alt={github}/>
+                            <a href={item.github}><strong>Github</strong></a>                                 </ListGroup.Item>
+                            <ListGroup.Item className="d-flex align-items-center">
+                            <img className="img-icon" src={demo} alt={demo}/>
+                            <a href={item.demo}><strong>Demo</strong></a>                                 </ListGroup.Item>
+                            <ListGroup.Item className="d-flex align-items-center">
+                                <img className="img-icon" src={tech} alt={tech}/>
+                                {/* <strong>Technologies Used:</strong> */}
+                                <ul className='badge-list'>
+                              {item.technologies.map((tech, index) => (
+                              <li key={index} className='badge'>{tech}</li>
+                              ))}
+                               </ul>
+                           </ListGroup.Item>
+                        </ListGroup>
+                    </Col>
+                </Row></>
+            ))}
+            <Footer />
+</Container>
+   </div>
     )
 }
 
