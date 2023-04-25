@@ -55,6 +55,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #595D81;
 }
 
 .medium-title{
@@ -110,3 +111,12 @@ a {
   margin-right: 10px;
 }
 
+.project-image {
+width: 50rem;
+border: #1d1e20 2px solid;
+}
+
+.technologies {
+  width: 20rem;
+  border: #1d1e20 2px solid;
+}

@@ -36,5 +36,65 @@
       "img_url": "./images/icon5.png",
       "description": "Real-world examples showcasing problem-solving skills for clients or personal projects, providing detailed insights into thought process & approach to problem-solving."
     }
+  ],
+
+  "individual": [
+    {
+    "id": 7,
+    "name": "PeerCashew",
+    "description": "PeerCashew is a peer-to-peer lending platform that allows borrowers to connect with investors and obtain loans.",
+    "images": "../projects/peercashew4.png",
+    "github": "https://github.com/Limeload/PeerCashew",
+    "demo": "",
+    "technologies": ["React.js", "Rails", "Postgresql", "Stripe payment API", "Bootstrap"]
+    },
+    {
+      "id": 8,
+      "name": "UrbanEyes",
+      "description": "UrbanEyes is designed to help cities and communities become more efficient, sustainable, and livable.",
+      "images": "../projects/urbaneyes.png",
+      "github": "https://github.com/Limeload/UrbanEyes",
+      "demo": "",
+      "technologies": ["React.js","Ruby on Rails", "Bootstrap"]
+    },
+    {
+      "id": 9,
+      "name": "Mixology",
+      "description": "Mixology is a Single Page Application allowing different kinds of selection operations over Cocktail recipes.",
+      "images": "../projects/mixology.png",
+      "github": "https://github.com/Limeload/Mixology",
+      "demo": "",
+      "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 10,
+      "name": "Rhythmiq",
+      "description": "Rhythmiq is a music app built with the Spotify API and React. With Rhythmiq, users can listen to their favorite songs, discover new music, and create custom playlists.",
+      "images": "../projects/rhythmiq.png",
+      "github": "https://github.com/Limeload/Rhythmiq",
+      "demo": "",
+      "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Spotify API"]
+    }
+  ],
+
+  "collaboration": [
+    {
+      "id": 11,
+      "name": "PickMeInACup",
+      "description": "PickMeInACup is a web application built using the React framework that enables users to easily order their favorite plant milk coffees from the comfort of their own homes.",
+      "images": "../projects/pickmeinacup.png",
+      "github": "https://github.com/Limeload/PickMeUpInACup",
+      "demo": "",
+      "technologies": ["Bootstrap","React.js"]
+    },
+    {
+      "id": 12,
+      "name": "TaskHive",
+      "description": "This is a web application for managing tasks. The application allows users to create tasks, assign tasks to projects, set deadlines, prioritize tasks, and track their progress.",
+      "images": "../projects/taskhive.png",
+      "github": "https://github.com/Limeload/TaskHive",
+      "demo": "",
+      "technologies": ["Ruby on Rails", "Bootstrap", "React.js"]
+    }
   ]
 }
