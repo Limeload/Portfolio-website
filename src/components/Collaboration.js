@@ -31,10 +31,10 @@ function Collaboration() {
                             <img className="img-icon" src={github} alt={github}/>
                             <a href="https://github.com/Limeload/PickMeUpInACup"><strong>Github</strong></a>
                             </ListGroup.Item>
-                            <ListGroup.Item className="d-flex align-items-center">
+                            {/* <ListGroup.Item className="d-flex align-items-center">
                             <img className="img-icon" src={demo} alt={demo}/>
                             <a href=""><strong>Demo</strong></a>
-                            </ListGroup.Item>
+                            </ListGroup.Item> */}
                             <ListGroup.Item className="d-flex align-items-center">
                                 <img className="img-icon" src={tech} alt={tech}/>
                                 {/* <strong>Technologies Used:</strong> */}
@@ -60,10 +60,10 @@ function Collaboration() {
                             <img className="img-icon" src={github} alt={github}/>
                             <a href="https://github.com/Limeload/TaskHive"><strong>Github</strong></a>
                             </ListGroup.Item>
-                            <ListGroup.Item className="d-flex align-items-center">
+                            {/* <ListGroup.Item className="d-flex align-items-center">
                             <img className="img-icon" src={demo} alt={demo}/>
                             <a href=""><strong>Demo</strong></a>
-                             </ListGroup.Item>
+                             </ListGroup.Item> */}
                             <ListGroup.Item className="d-flex align-items-center">
                                 <img className="img-icon" src={tech} alt={tech}/>
                                 {/* <strong>Technologies Used:</strong> */}

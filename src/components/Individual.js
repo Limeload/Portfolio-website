@@ -66,10 +66,10 @@ function Individual() {
                                  <img className="img-icon" src={github} alt={github}/>
                                  <a href="https://github.com/Limeload/UrbanEyes"><strong>Github</strong></a>
                                  </ListGroup.Item>
-                                 <ListGroup.Item className="d-flex align-items-center">
+                                 {/* <ListGroup.Item className="d-flex align-items-center">
                                  <img className="img-icon" src={demo} alt={demo}/>
                                  <a href="https://youtu.be/1M7A8-FhsaM"><strong>Demo</strong></a>
-                                 </ListGroup.Item>
+                                 </ListGroup.Item> */}
                                  <ListGroup.Item className="d-flex align-items-center">
                                      <img className="img-icon" src={tech} alt={tech}/>
                                      {/* <strong>Technologies Used:</strong> */}
@@ -127,10 +127,10 @@ function Individual() {
                                  <img className="img-icon" src={github} alt={github}/>
                                  <a href="https://github.com/Limeload/Rhythmiq"><strong>Github</strong></a>
                                  </ListGroup.Item>
-                                 <ListGroup.Item className="d-flex align-items-center">
+                                 {/* <ListGroup.Item className="d-flex align-items-center">
                                  <img className="img-icon" src={demo} alt={demo}/>
                                  <a href="https://youtu.be/j7ZlXX-8hxQ"><strong>Demo</strong></a>
-                                 </ListGroup.Item>
+                                 </ListGroup.Item> */}
                                  <ListGroup.Item className="d-flex align-items-center">
                                      <img className="img-icon" src={tech} alt={tech}/>
                                      {/* <strong>Technologies Used:</strong> */}
