@@ -2,7 +2,7 @@ import React from 'react';
 // import {useState, useEffect} from 'react';
 import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
 import github from '../images/github.png';
-import demo from '../images/demo.png';
+// import demo from '../images/demo.png';
 import tech from '../images/tech.png';
 import pickmeinacup from '../images/projects/pickmeinacup.png';
 import taskhive from '../images/projects/taskhive.png';
