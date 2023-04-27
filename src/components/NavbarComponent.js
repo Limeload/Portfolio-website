@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
+
 
 
 function NavbarComponent() {
@@ -16,7 +18,7 @@ function NavbarComponent() {
           {/* <Nav.Link href="/about">About</Nav.Link> */}
           {/* <Nav.Link href="/services">Services</Nav.Link>
           <Nav.Link href="/more">More</Nav.Link> */}
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Link to={"/contact"}>Contact</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

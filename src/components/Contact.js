@@ -4,9 +4,6 @@ import { Container, Form, Button } from 'react-bootstrap';
 import Footer from './Footer';
 
 function Contact() {
-  function showSuccessMessage() {
-    alert("Thank you for contacting us. We will get back to you as soon as possible.");
-  }
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');
   // const [subject, setSubject] = useState('');
@@ -36,7 +33,7 @@ function Contact() {
   return (
     <Container className="contact-form">
       <h1>Drop me a line - Let's get in touch!</h1>
-      <Form className="mt-5" action='mailto:shraddharaom@gmail.com' method='post' encType='text/plain' onSubmit={showSuccessMessage()}>
+      <Form className="mt-5" action='mailto:shraddharaom@gmail.com' method='post' encType='text/plain'>
         <Form.Group controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Enter your name" name='name' required />
