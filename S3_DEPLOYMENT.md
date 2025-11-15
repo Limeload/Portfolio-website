@@ -57,73 +57,58 @@ aws s3 website s3://your-bucket-name --index-document index.html --error-documen
 
 ## Deploy to GitHub Pages
 
-### Option 1: Using GitHub Actions (Recommended)
-
-1. Create a `.github/workflows/deploy.yml` file (see below)
-2. Push your code to GitHub
-3. GitHub Actions will automatically build and deploy to the `gh-pages` branch
-
-### Option 2: Manual Deployment
+### Method 1: Using gh-pages package (Recommended)
 
 1. Build the project:
 ```bash
 npm run build
 ```
 
-2. Install `gh-pages` package:
-```bash
-npm install --save-dev gh-pages
-```
-
-3. Add deploy script to `package.json`:
-```json
-"scripts": {
-  "deploy": "gh-pages -d build"
-}
-```
-
-4. Deploy:
+2. Deploy to GitHub Pages:
 ```bash
 npm run deploy
 ```
 
-5. In GitHub repository settings:
-   - Go to Settings → Pages
-   - Select source: `gh-pages` branch
-   - Save
+This will:
+- Create a `gh-pages` branch (if it doesn't exist)
+- Push the `build` folder contents to the `gh-pages` branch
+- Your site will be available at `https://[username].github.io/[repository-name]`
 
-### GitHub Actions Workflow (`.github/workflows/deploy.yml`)
+3. In GitHub repository settings:
+   - Go to **Settings → Pages**
+   - Select source: **`gh-pages` branch**
+   - Select folder: **`/ (root)`**
+   - Click **Save**
 
-```yaml
-name: Deploy to GitHub Pages
+### Method 2: Manual Deployment
 
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          
-      - name: Install dependencies
-        run: npm install
-        
-      - name: Build
-        run: npm run build
-        
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+1. Build the project:
+```bash
+npm run build
 ```
+
+2. Create or checkout the `gh-pages` branch:
+```bash
+git checkout --orphan gh-pages
+git rm -rf .
+```
+
+3. Copy build files:
+```bash
+cp -r build/* .
+```
+
+4. Commit and push:
+```bash
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin gh-pages
+```
+
+5. In GitHub repository settings:
+   - Go to **Settings → Pages**
+   - Select source: **`gh-pages` branch**
+   - Save
 
 ---
 

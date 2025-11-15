@@ -68,9 +68,9 @@ This portfolio is configured to work on both **AWS S3** and **GitHub Pages**. Se
 
 ### Quick Deploy to GitHub Pages
 
-1. Push your code to GitHub
-2. The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically build and deploy on push to `main` branch
-3. Enable GitHub Pages in repository settings (Settings → Pages)
+1. Build the project: `npm run build`
+2. Deploy: `npm run deploy`
+3. Enable GitHub Pages in repository settings (Settings → Pages → Source: `gh-pages` branch)
 
 ### Quick Deploy to S3
 
