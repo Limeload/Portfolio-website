@@ -5,10 +5,10 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 function Projects({ projects }) {
   return (
     <Container className="my-5">
-      <h2 className='projects-section'>What I Have In Here?</h2>
-      <p className=' category'> Select a category to check out my work pieces</p>
+      <h2 className='projects-section'>Projects & Experiences</h2>
+      <p className=' category'>Select a category to check out my work pieces</p>
       <Row className="mt-5">
-        {projects?.slice(0, 2).map((item) => (
+        {projects?.map((item) => (
           <Col lg={4} md={6} sm={12} className="mb-4" key={item.id}>
             <Link to={`/projects/${item.id}`}>
               <Card>

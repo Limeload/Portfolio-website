@@ -1,23 +1,16 @@
 import React from 'react';
-import {useState, useEffect} from 'react';
 import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
 import github from '../images/github.png';
 import demo from '../images/demo.png';
 import tech from '../images/tech.png';
 import Footer from './Footer';
-
+import { openSourceProjects } from '../data/staticData';
 
 function Individual() {
-    const [individuals, setIndividuals] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:3001/individual')
-        .then(response => response.json())
-        .then(data => setIndividuals(data))
-    }, []);
     return (
         <div>
              <Container className="my-5">
-                 {individuals?.map((item) => (
+                 {openSourceProjects?.map((item) => (
                            <><br /><br />
                            <h2 className='projects-section'>{item.name}</h2>
                            <p className=' category'>{item.description}</p>
@@ -27,15 +20,20 @@ function Individual() {
                          </Col>
                          <Col md={4}>
                              <ListGroup className="technologies">
+                                 {item.github && (
                                  <ListGroup.Item className="d-flex align-items-center">
                                  <img className="img-icon" src={github} alt={github}/>
-                                 <a href={item.github}><strong>Github</strong></a>                                 </ListGroup.Item>
+                                 <a href={item.github} target="_blank" rel="noopener noreferrer"><strong>Github</strong></a>
+                                 </ListGroup.Item>
+                                 )}
+                                 {item.demo && (
                                  <ListGroup.Item className="d-flex align-items-center">
                                  <img className="img-icon" src={demo} alt={demo}/>
-                                 <a href={item.demo}><strong>Demo</strong></a>                                 </ListGroup.Item>
+                                 <a href={item.demo} target="_blank" rel="noopener noreferrer"><strong>Demo</strong></a>
+                                 </ListGroup.Item>
+                                 )}
                                  <ListGroup.Item className="d-flex align-items-center">
                                      <img className="img-icon" src={tech} alt={tech}/>
-                                     {/* <strong>Technologies Used:</strong> */}
                                      <ul className='badge-list'>
                                    {item.technologies.map((tech, index) => (
                                    <li key={index} className='badge'>{tech}</li>

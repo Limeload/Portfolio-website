@@ -14,7 +14,7 @@ function Contact() {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_email: 'shraddharaom@gmail.com',
+      to_email: 'raoshraddham@gmail.com',
       subject: subject,
       message_html: message
     };
