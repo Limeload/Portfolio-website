@@ -15,7 +15,7 @@ import CaseStudies from './CaseStudies';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL || '/Portfolio-website'}>
     <div className="App">
       <Switch>
         <Container>
