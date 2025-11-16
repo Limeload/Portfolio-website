@@ -104,7 +104,7 @@ function About() {
 
           <h3 className="mt-4">Activities</h3>
           <ul>
-            <li><strong>Technical Blog Writer</strong> - Published 10+ articles covering cloud engineering, Python patterns, and AI tooling; shared practical breakdowns of architectures, performance tips, and debugging approaches. <a href="#" target="_blank" rel="noopener noreferrer">Blog Link</a></li>
+            <li><strong>Technical Blog Writer</strong> - Published 10+ articles covering cloud engineering, Python patterns, and AI tooling; shared practical breakdowns of architectures, performance tips, and debugging approaches.</li>
             <li><strong>Hackathon Participant</strong> - Competed in 3+ cloud & AI hackathons, focusing on automation and developer tools.</li>
             <li><strong>AWS Free Tier Experiments</strong> - Explored EC2, Lambda, S3, RDS, and serverless workflows to gain hands-on cloud experience.</li>
             <li><strong>Freelance Developer</strong> - Completed client projects building web apps, APIs, and automation tools; delivered end-to-end solutions using React, Python, AWS, and database technologies.</li>
