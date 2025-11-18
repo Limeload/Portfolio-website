@@ -9,7 +9,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -30,13 +30,13 @@ function Navbar() {
         </Link>
         
         <button 
-          className="mobile-menu-toggle"
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
-          <span className={isMobileMenuOpen ? 'open' : ''}></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <ul className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -58,4 +58,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

@@ -27,32 +27,39 @@ function Home() {
 
   return (
     <section className="hero">
-      <div className="hero-background">
-        <div className="gradient-orb orb-1"></div>
-        <div className="gradient-orb orb-2"></div>
-        <div className="gradient-orb orb-3"></div>
-      </div>
-      
-      <div className="container-modern">
+      <div className="container">
         <div className="hero-content" ref={heroRef}>
-          <div className="hero-greeting fade-in">Hello, I'm</div>
-          <h1 className="hero-name">
-            {personalInfo.name}
-          </h1>
-          <h2 className="hero-title gradient-text">
-            {personalInfo.title}
-          </h2>
-          <p className="hero-description">
-            {personalInfo.description}
-          </p>
+          <div className="hero-greeting">Hello, I'm</div>
+          <h1 className="hero-name">{personalInfo.name}</h1>
+          <h2 className="hero-title">{personalInfo.title}</h2>
+          <p className="hero-description">{personalInfo.description}</p>
           
           <div className="hero-buttons">
-            <Link to="/projects" className="btn-modern">
-              View My Work
+            <Link to="/projects" className="btn btn-primary">
+              View Projects
             </Link>
-            <Link to="/contact" className="btn-modern btn-outline">
+            <Link to="/contact" className="btn btn-secondary">
               Get In Touch
             </Link>
+          </div>
+
+          <div className="hero-info">
+            <div className="info-item">
+              <span className="info-label">Location</span>
+              <span className="info-value">{personalInfo.location}</span>
+            </div>
+            <div className="info-item">
+              <span className="info-label">Email</span>
+              <a href={`mailto:${personalInfo.email}`} className="info-value">
+                {personalInfo.email}
+              </a>
+            </div>
+            <div className="info-item">
+              <span className="info-label">Phone</span>
+              <a href={`tel:${personalInfo.phone}`} className="info-value">
+                {personalInfo.phone}
+              </a>
+            </div>
           </div>
 
           <div className="hero-social">
@@ -62,10 +69,10 @@ function Home() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={social.name}
                 className="social-link"
+                aria-label={social.name}
               >
-                {social.icon || social.name}
+                {social.name}
               </a>
             ))}
           </div>
@@ -79,10 +86,6 @@ function Home() {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="scroll-indicator">
-        <div className="mouse"></div>
       </div>
     </section>
   );
